@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:id="@+id/tv_fullname_fine"
+                    android:textSize="20dp"
+                    android:textColor="@color/Black"
+                    android:layout_marginLeft="8dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remove"
+                    android:textColor="@color/red"
+                    android:textAllCaps="false"
+                    android:layout_weight="1.5"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:id="@+id/btn_delete_fines_layout"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/ic_action_clear" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:id="@+id/tv_amount_fine"
+                android:textSize="20dp"
+                android:textColor="@color/LimeGreen"
+                android:layout_marginLeft="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_reason_fine"
+                android:layout_marginTop="4dp"
+                android:textSize="20dp"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <View style="@style/Divider"/>
+    <View style="@style/Divider"/>
+
+</LinearLayout>

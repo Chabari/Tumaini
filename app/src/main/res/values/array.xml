@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="loan_types">
+        <item>Select Loan Type</item>
+        <item>Normal Loan</item>
+        <item>Advance Loan</item>
+        <item>Wakulima Loan</item>
+    </string-array>
+</resources>

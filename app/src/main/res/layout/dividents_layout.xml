@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        android:elevation="8dp"
+        android:id="@+id/card_Dev_layout"
+        app:cardElevation="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="20dp"
+                    android:id="@+id/tv_fullname_dividents_display"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="end"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/tv_idnumber_dividents_display"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:theme="@style/PrimaryButton"
+                android:id="@+id/btn_all_dividents_display"
+                android:elevation="16dp"
+                android:layout_marginBottom="2dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <View style="@style/Divider"/>
+    <View style="@style/Divider"/>
+</LinearLayout>

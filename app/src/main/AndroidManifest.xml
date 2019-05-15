@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tumaini.tumaini">
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+
+
+        <service
+            android:name=".FirebaseNotificationActionHelper.FirebaseIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FirebaseNotificationActionHelper.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".Login"
+            android:theme="@style/LoginTheme">
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".ForgotPassword"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".MainPanel"
+            android:label="Tumaini Sacco"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".New_Member"
+            android:label="New Member"
+            android:parentActivityName=".MainPanel"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".All_Members"
+            android:label="Tumaini Members"
+            android:parentActivityName=".MainPanel"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MemberDetails"
+            android:label="Member Details"
+            android:parentActivityName=".All_Members"
+            android:theme="@style/AppTheme">
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Loans.Wakulima_Loan"
+            android:parentActivityName=".MainPanel"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Loans.Members_with_Loans"
+            android:parentActivityName=".MainPanel"
+            android:theme="@style/AppTheme" >
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Loans.Loan_Advances"
+            android:parentActivityName=".MainPanel"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Funds.Risk_Fund"
+            android:parentActivityName=".MainPanel"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Funds.Project_Funds"
+            android:parentActivityName=".MainPanel"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SharesDividends.Shares"
+            android:parentActivityName=".MainPanel"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SharesDividends.Dividends"
+            android:parentActivityName=".MainPanel"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Normal_Loan"
+            android:label="Normal Loan"
+            android:parentActivityName=".MainPanel"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Loans.MemberwithloanDetails"
+            android:parentActivityName=".Loans.Members_with_Loans"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".Loans.Pay_Loan"
+            android:parentActivityName=".Loans.MemberwithloanDetails"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FinesOthers.Fines"
+            android:parentActivityName=".MainPanel"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FinesOthers.Members_With_Fines"
+            android:parentActivityName=".MainPanel"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".SplashScreen"
+            android:theme="@style/LoginTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

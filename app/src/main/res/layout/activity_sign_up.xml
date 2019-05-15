@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="tumaini.tumaini.SignUp"
+    android:id="@+id/Layout_signup"
+    android:background="@drawable/gradient_all_list">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/circle_signup"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please enter your details to Create Account."
+                android:textColor="@color/Black"
+                android:layout_marginTop="8dp"
+                android:textSize="18dp"
+                android:textAlignment="center"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="10dp"
+                app:cardElevation="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:id="@+id/edt_Email_SignUp"
+                            android:drawableRight="@drawable/ic_action_email"/>
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/Gray"
+                        >
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edt_password_SignUp"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:textColorHint="@color/Gray"
+                            android:layout_marginBottom="2dp"/>
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/Gray"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edt_Cpassword_SignUp"
+                            android:hint="Confirm Password"
+                            android:inputType="textPassword"
+                            android:textColorHint="@color/Gray"
+                            android:layout_marginBottom="2dp"/>
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/PrimaryButton"
+                android:layout_marginTop="16dp"
+                android:text="Create Account"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:id="@+id/btn_create_account"
+                android:textColor="@color/Black"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/PrimaryFlatButton"
+                android:layout_marginTop="10dp"
+                android:text="Already have an account?"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:id="@+id/btn_already_have_account"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

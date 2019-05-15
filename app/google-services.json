@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "157938725189",
+    "firebase_url": "https://tumaini-fc9ba.firebaseio.com",
+    "project_id": "tumaini-fc9ba",
+    "storage_bucket": "tumaini-fc9ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157938725189:android:df4c5fa9bfefd82e",
+        "android_client_info": {
+          "package_name": "tumaini.tumaini"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157938725189-ab56nserkn6614a32m38k8i87ukh58cd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tumaini.tumaini",
+            "certificate_hash": "7b79285e0cc7a6256bbecd503363276e0ff8350f"
+          }
+        },
+        {
+          "client_id": "157938725189-n8ko71arld2m2uoh3ieeibfpuc8bvn42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHIFN7imV84fmkFI16jO2s6UafRc65msg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157938725189-n8ko71arld2m2uoh3ieeibfpuc8bvn42.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
